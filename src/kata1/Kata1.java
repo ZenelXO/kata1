@@ -1,21 +1,12 @@
 package kata1;
 
-import java.util.Calendar;
-import java.util.GregorianCalendar;
 
-/**
- *
- * @author Ángel H.O
- */
+import java.time.LocalDate;
+
 public class Kata1 {
 
-    public static void main(String[] args) {
-        Calendar date;
-        date = GregorianCalendar.getInstance();
-        date.set(1949, 9, 24);
-        
-        Person person = new Person("Blas", date);
+    public static void main(String[] args) {     
+        Person person = new Person("Ángel", LocalDate.of(2002, 6, 16));
         System.out.println(person.getName() + " tiene " + person.getAge() + " años");
     }
-    
 }
